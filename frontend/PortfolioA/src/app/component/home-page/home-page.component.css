@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #f0f2f5, #e0e5ec);
+}
+/*Profil Style */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 40px;
+}
+.left{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+}
+.left, .right {
+  flex: 1;
+  padding: 20px;
+}
+
+.right h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.right p {
+  font-size: 1.2em;
+  color: #555;
+}
+
+.divider {
+  width: 2px;
+  height: 60%;
+  background-color: #ccc;
+  margin: 0 30px;
+}
+
+img {
+  width: 300px;
+  height: auto;
+ 
+}
+.social-buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+    justify-content: start;
+  }
+  
+  .btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 0.95em;
+    transition: background-color 0.3s ease;
+    color: white;
+  }
+  
+  .btn.linkedin {
+    background-color: #0077b5;
+  }
+  
+  .btn.github {
+    background-color: #333;
+  }
+  
+  .btn:hover {
+    opacity: 0.85;
+  }
+/* Skills Section Style */  
+.experience-section {
+    padding: 60px 40px;
+    background-color: #f9f9f9;
+  }
+  
+  .experience-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+    gap: 40px;
+  }
+  
+  .exp-left,
+  .exp-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .exp-center {
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .date-line {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-weight: bold;
+    color: #666;
+    border-left: 2px solid #aaa;
+    padding-left: 10px;
+  }
+  
+  .company-horizontal {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .company-logo {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 6px;
+    border-radius: 12px;
+  }
+  
+  .company-info {
+    text-align: left;
+  }
+  
+  .company-info h3 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #2c3e50;
+  }
+  
+  .company-info p {
+    margin: 5px 0 0;
+    font-size: 1em;
+    color: #777;
+  }
+  
+  .experience-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .experience-content p {
+    font-size: 1.05em;
+    color: #555;
+    max-width: 400px;
+    margin: 0;
+  }
+  
+  
