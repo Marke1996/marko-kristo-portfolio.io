@@ -1,26 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
-
-body, html {
+/* --- Allgemeines Layout & Schrift --- */
+body,
+html {
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
   background: linear-gradient(to right, #f0f2f5, #e0e5ec);
 }
-/*Profil Style */
+
+/* --- Profilbereich oben --- */
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  padding: 40px;
 }
-.left{
+
+.left {
   display: flex;
   flex-direction: column;
   justify-content: end;
   align-items: end;
 }
-.left, .right {
+
+.left,
+.right {
   flex: 1;
   padding: 20px;
 }
@@ -39,125 +42,160 @@ body, html {
 .divider {
   width: 2px;
   height: 60%;
-  background-color: #ccc;
+  background-color: #a8a8a8;
   margin: 0 30px;
 }
 
 img {
   width: 300px;
   height: auto;
- 
 }
+
+/* --- Social Media Buttons --- */
 .social-buttons {
-    margin-top: 20px;
-    display: flex;
-    gap: 15px;
-    justify-content: start;
-  }
-  
-  .btn {
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 8px;
-    font-weight: bold;
-    font-size: 0.95em;
-    transition: background-color 0.3s ease;
-    color: white;
-  }
-  
-  .btn.linkedin {
-    background-color: #0077b5;
-  }
-  
-  .btn.github {
-    background-color: #333;
-  }
-  
-  .btn:hover {
-    opacity: 0.85;
-  }
-/* Skills Section Style */  
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: start;
+}
+
+.btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  overflow: hidden;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn.linkedin {
+  background-color: #0077b5;
+}
+
+.btn.linkedin img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.btn.github {
+  background-color: white;
+}
+
+.btn.github img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* --- Überschrift Berufserfahrung --- */
+.experience-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.experience-header h2 {
+  font-size: 2em;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.experience-line {
+  width: 350px;
+  height: 4px;
+  background-color: #0077b5;
+  margin: 0 auto;
+  border-radius: 2px;
+}
+
+/* --- Berufserfahrung Abschnitt --- */
 .experience-section {
-    padding: 60px 40px;
-    background-color: #f9f9f9;
-  }
-  
-  .experience-row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 60px;
-    gap: 40px;
-  }
-  
-  .exp-left,
-  .exp-right {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .exp-center {
-    width: 120px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .date-line {
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
-    font-weight: bold;
-    color: #666;
-    border-left: 2px solid #aaa;
-    padding-left: 10px;
-  }
-  
-  .company-horizontal {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-  }
-  
-  .company-logo {
-    width: 80px;
-    height: 80px;
-    object-fit: contain;
-    background-color: white;
-    border: 1px solid #ddd;
-    padding: 6px;
-    border-radius: 12px;
-  }
-  
-  .company-info {
-    text-align: left;
-  }
-  
-  .company-info h3 {
-    margin: 0;
-    font-size: 1.5em;
-    color: #2c3e50;
-  }
-  
-  .company-info p {
-    margin: 5px 0 0;
-    font-size: 1em;
-    color: #777;
-  }
-  
-  .experience-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .experience-content p {
-    font-size: 1.05em;
-    color: #555;
-    max-width: 400px;
-    margin: 0;
-  }
-  
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f8f9fa;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+.experience-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.exp-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+}
+
+.exp-left,
+.exp-right {
+  flex: 1;
+  padding: 20px;
+}
+
+.exp-right h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.exp-right p {
+  font-size: 1.2em;
+  color: #555;
+}
+
+.location-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.exp-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 30px;
+  height: 100%;
+  /* z.B. Höhe der gesamten Linie + Abstand */
+  position: relative;
+}
+
+.exp-line {
+  width: 2px;
+  flex-grow: 1;
+  background-color: #a8a8a8;
+  position: relative;
+}
+
+.exp-date {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-weight: bold;
+  color: #a8a8a8;
+  font-size: 1em;
+  padding: 2px 6px;
+}
+
+.exp-date.top {
+  margin-top: 8px;
+  margin-bottom: -6px;
+}
+
+.exp-date.bottom {
+  margin-top: 8px;
+  margin-bottom: -5px;
+}
